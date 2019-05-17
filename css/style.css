@@ -1,0 +1,8 @@
+@import url("components/nav.css");
+@import url("components/icons.css");
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
