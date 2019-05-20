@@ -1,0 +1,67 @@
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 415px;
+
+.card {
+  padding: 5px;
+
+  .paragraph {
+    padding-bottom:20px;
+
+    border-left:3px solid white;
+
+    a {
+        text-decoration:none;
+        padding-left:10px;
+        display:block;
+        color:inherit;
+    }
+  }
+
+  &.card-javascript, .card-github_history {
+      flex: 0 0 25%;
+
+        @media (max-width: $breakpoint-tablet) {
+            flex: 0 0 50%;
+        }
+    }
+
+   &.card-javascript_history {
+    flex: 0 0 50%;
+
+    @media (max-width: $breakpoint-tablet) {
+        flex: 0 0 100%;
+    }
+  }
+
+}
+
+.card-javascript_history {
+  display: flex;
+  flex-direction: column;
+
+  .javascript-history {
+    border-bottom: 1px solid white;
+
+
+  }
+
+  .scroll-list {
+      height: 400px;
+      overflow:hidden;
+      overflow-y:scroll;
+      padding-bottom: 20px;
+  }
+
+  .card-time {
+    text-align: center;
+     .time {
+        color: #6272a4;
+        font-size: 40px;
+      .hours {
+        font-size: 100px;
+      }
+
+
+     }
+  }
+}

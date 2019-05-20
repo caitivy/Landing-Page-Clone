@@ -1,0 +1,19 @@
+
+@function rem-calc($values, $base: $rem-base) {
+  $rem-values: ();
+  $count: length($values);
+
+  @if $base == null {
+    $base: $rem-base;
+  }
+
+  @if $count == 1 {
+    @return -zf-to-rem($values, $base);
+  }
+
+  @for $i from 1 through $count {
+    $rem-values: append($rem-values, -zf-to-rem(nth($values, $i), $base));
+  }
+
+  @return $rem-values;
+}

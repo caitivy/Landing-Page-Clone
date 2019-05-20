@@ -1,0 +1,21 @@
+@import 'components/nav';
+@import 'components/icons';
+@import 'components/card';
+@import 'mixins';
+@import 'https://fonts.googleapis.com/css?family=Inconsolata&display=swap';
+
+$breakpoint-tablet: 768px;
+
+body {
+  font-family: 'Inconsolata', monospace
+}
+.grid {
+  display: grid;
+  grid-template-columns:1fr 11fr;
+  background-color:#282935;
+  color: white;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
