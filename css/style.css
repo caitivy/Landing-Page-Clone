@@ -13,7 +13,7 @@
     .nav-container .nav-bar li {
       text-transform: uppercase;
       border-bottom: 3px solid transparent;
-      margin: 10px 0 0 8px; }
+      margin: 14px 0 0 8px; }
       .nav-container .nav-bar li i {
         border-radius: 3px;
         padding: 5px; }
@@ -29,9 +29,9 @@
       .nav-container .nav-bar li.gists a {
         color: #74F27C; }
       .nav-container .nav-bar li.stock i {
-        background-color: #74F27C; }
+        background-color: #FEA500; }
       .nav-container .nav-bar li.stock a {
-        color: #74F27C; }
+        color: #FEA500; }
       .nav-container .nav-bar li.trending i {
         background-color: #ED75C5; }
       .nav-container .nav-bar li.trending a {
@@ -42,12 +42,30 @@
         color: #B38DED; }
       .nav-container .nav-bar li.playground i {
         background-color: #EAEAE7; }
+        .nav-container .nav-bar li.playground i:last-child {
+          background-color: #45475b; }
       .nav-container .nav-bar li.playground a {
         color: #EAEAE7; }
       .nav-container .nav-bar li.help i {
         background-color: #E6DC74; }
       .nav-container .nav-bar li.help a {
         color: #E6DC74; }
+  .nav-container .social-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 10px; }
+    .nav-container .social-links .fab {
+      font-size: 20px; }
+
+.fas, .fa-lock {
+  opacity: 0.5; }
+
+.initab-icon {
+  padding-left: 37px;
+  padding-top: 500px; }
 
 .card {
   padding: 5px; }
@@ -59,6 +77,18 @@
       padding-left: 10px;
       display: block;
       color: inherit; }
+    .card .paragraph .user {
+      color: #E6DC74; }
+    .card .paragraph .postedby {
+      color: #8BE9FC; }
+    .card .paragraph .score {
+      color: #A0CAF0; }
+    .card .paragraph .link {
+      color: #ED75C5; }
+    .card .paragraph .request-number {
+      color: #ED75C5; }
+    .card .paragraph .repo {
+      color: #A0CAF0; }
   .card.card-javascript, .card .card-github_history {
     flex: 0 0 25%; }
     @media (max-width: 768px) {
@@ -79,7 +109,10 @@
     height: 400px;
     overflow: hidden;
     overflow-y: scroll;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    color: #A0CAF0; }
+    .card-javascript_history .scroll-list .time-stamp {
+      color: gray; }
   .card-javascript_history .card-time {
     text-align: center; }
     .card-javascript_history .card-time .time {
@@ -87,9 +120,20 @@
       font-size: 40px; }
       .card-javascript_history .card-time .time .hours {
         font-size: 100px; }
+        .card-javascript_history .card-time .time .hours .minute {
+          font-size: 100px; }
+          .card-javascript_history .card-time .time .hours .minute .date {
+            color: #6272a4;
+            font-size: 40px; }
 
 body {
-  font-family: "Inconsolata", monospace; }
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px; }
+
+h2 {
+  font-size: 15px;
+  color: #8BE9FC;
+  padding-bottom: 20px; }
 
 .grid {
   display: grid;
@@ -98,6 +142,7 @@ body {
   color: white; }
 
 .main-container {
+  padding-right: 90px;
   display: flex;
   justify-content: space-between; }
 

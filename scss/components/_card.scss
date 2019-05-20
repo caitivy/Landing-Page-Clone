@@ -15,6 +15,25 @@ $breakpoint-mobile: 415px;
         display:block;
         color:inherit;
     }
+    .user {
+      color: #E6DC74;
+
+    }
+    .postedby {
+      color:#8BE9FC;
+    }
+    .score {
+      color: #A0CAF0;
+    }
+    .link {
+      color:#ED75C5;
+    }
+    .request-number {
+      color:#ED75C5;
+    }
+    .repo {
+      color: #A0CAF0;
+    }
   }
 
   &.card-javascript, .card-github_history {
@@ -41,15 +60,18 @@ $breakpoint-mobile: 415px;
 
   .javascript-history {
     border-bottom: 1px solid white;
-
-
-  }
+}
 
   .scroll-list {
       height: 400px;
       overflow:hidden;
       overflow-y:scroll;
       padding-bottom: 20px;
+      color: #A0CAF0;
+
+      .time-stamp{
+        color: gray;
+      }
   }
 
   .card-time {
@@ -59,9 +81,14 @@ $breakpoint-mobile: 415px;
         font-size: 40px;
       .hours {
         font-size: 100px;
-      }
-
-
+      .minute {
+        font-size: 100px;
+      .date {
+        color: #6272a4;
+        font-size: 40px;
+          }
+        }
+       }
      }
   }
 }
