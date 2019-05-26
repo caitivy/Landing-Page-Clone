@@ -19,12 +19,14 @@
             i {
                 border-radius: 3px;
                 padding:5px;
+
             }
 
             a {
               text-decoration: none;
               font-size: 13px;
             }
+
 
             &.settings {
                 a { color:#8BE9FC; }
@@ -61,6 +63,10 @@
             }
         }
     }
+
+    .fas {
+              opacity: 2.7;
+            }
     .social-links {
         display: flex;
         justify-content: space-between;
@@ -68,6 +74,7 @@
         text-decoration: none;
         list-style-type: none;
         padding-left:10px;
+        padding-bottom: 10px;
 
         .fab{
 

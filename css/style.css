@@ -50,13 +50,16 @@
         background-color: #E6DC74; }
       .nav-container .nav-bar li.help a {
         color: #E6DC74; }
+  .nav-container .fas {
+    opacity: 2.7; }
   .nav-container .social-links {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     text-decoration: none;
     list-style-type: none;
-    padding-left: 10px; }
+    padding-left: 10px;
+    padding-bottom: 10px; }
     .nav-container .social-links .fab {
       font-size: 20px; }
 
@@ -67,10 +70,14 @@
   padding-left: 37px;
   padding-top: 500px; }
 
+.far {
+  margin-right: 10px; }
+
 .card {
   padding: 5px; }
   .card .paragraph {
     padding-bottom: 20px;
+    color: white;
     border-left: 3px solid white; }
     .card .paragraph a {
       text-decoration: none;
@@ -100,40 +107,94 @@
       .card.card-javascript_history {
         flex: 0 0 100%; } }
 
+.link-space {
+  margin-bottom: 0; }
+
+.github-link {
+  margin-left: 54px;
+  font-size: 12px;
+  color: #A0CAF0; }
+
+.issues-link {
+  color: #E6DC74;
+  margin-left: 43px; }
+
+.pull-request-link {
+  color: #ED75C5;
+  margin-left: 12px; }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #E6DC74;
+  margin-top: 1px;
+  margin-left: 58px; }
+
+.scroll-lists {
+  height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  color: #A0CAF0;
+  padding: 15px; }
+
 .card-javascript_history {
   display: flex;
   flex-direction: column; }
   .card-javascript_history .javascript-history {
     border-bottom: 1px solid white; }
   .card-javascript_history .scroll-list {
-    height: 400px;
+    height: 450px;
     overflow: hidden;
     overflow-y: scroll;
+    padding-top: 10px;
     padding-bottom: 20px;
-    color: #A0CAF0; }
-    .card-javascript_history .scroll-list .time-stamp {
+    color: #A0CAF0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .card-javascript_history .scroll-list p {
+      justify-content: space-between; }
+    .card-javascript_history .scroll-list .score .time-stamp {
       color: gray; }
   .card-javascript_history .card-time {
-    text-align: center; }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #6272a4; }
     .card-javascript_history .card-time .time {
       color: #6272a4;
-      font-size: 40px; }
-      .card-javascript_history .card-time .time .hours {
-        font-size: 100px; }
-        .card-javascript_history .card-time .time .hours .minute {
-          font-size: 100px; }
-          .card-javascript_history .card-time .time .hours .minute .date {
-            color: #6272a4;
-            font-size: 40px; }
+      font-weight: bolder;
+      margin-bottom: auto;
+      margin-top: auto;
+      margin-right: 85px;
+      font-size: 120px;
+      padding-top: 60px;
+      display: flex; }
+    .card-javascript_history .card-time .meridies {
+      font-size: 26px; }
+    .card-javascript_history .card-time .date {
+      color: #6272a4;
+      font-size: 20px;
+      margin-right: 85px; }
+    .card-javascript_history .card-time .hours {
+      font-size: 120px; }
+    .card-javascript_history .card-time .minute {
+      font-size: 120px; }
 
 body {
   font-family: 'Inconsolata', monospace;
-  font-size: 14px; }
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
 
 h2 {
   font-size: 15px;
   color: #8BE9FC;
-  padding-bottom: 20px; }
+  padding-bottom: 2px;
+  padding-left: 31px; }
 
 .grid {
   display: grid;
@@ -142,6 +203,7 @@ h2 {
   color: white; }
 
 .main-container {
+  padding-top: 15px;
   padding-right: 90px;
   display: flex;
   justify-content: space-between; }

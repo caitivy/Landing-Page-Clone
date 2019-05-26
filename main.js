@@ -15,4 +15,4 @@
       const hourDegrees = ((mins / 12) * 360) + 90;
 
     }
-    setInterval(setDate, 100);  //to set a time interval with the parameter as the setDate variable and 1000 seconds
+    setInterval(setDate, 100);

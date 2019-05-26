@@ -9,11 +9,14 @@ $breakpoint-tablet: 768px;
 body {
   font-family: 'Inconsolata', monospace;
   font-size: 14px;
+   margin: 0;
+  padding: 0;
 }
 h2 {
   font-size: 15px;
   color:#8BE9FC;
-  padding-bottom: 20px;
+  padding-bottom: 2px;
+  padding-left: 31px;
 }
 .grid {
   display: grid;
@@ -22,6 +25,7 @@ h2 {
   color: white;
 }
 .main-container {
+  padding-top: 15px;
   padding-right: 90px;
   display: flex;
   justify-content: space-between;
