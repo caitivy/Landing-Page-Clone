@@ -33,8 +33,7 @@
             </li>
             <li class="playground">
                 <i class="far fa-lightbulb icon-nav"></i>
-                <a href="#playground" class="playground-link">Playground</a>
-                <i class="fas fa-lock"></i>
+                <a href="#playground" class="playground-link">Playground</a><i class="fas fa-lock"></i>
             </li>
             <li class="help">
                 <i class="fas fa-question icon-nav"></i>
@@ -55,10 +54,10 @@
             </svg>
         </div>
         <ul class="social-links">
-          <li><i class="fab fa-facebook"></i></li>
-          <li><i class="fab fa-linkedin"></i></li>
-          <li><i class="fab fa-twitter-square"></i></li>
-          <li><i class="fab fa-discord"></i></li>
+          <li><img src="images/facebook-icon.svg" alt="" width="22" height="22"></li>
+          <li><img src="images/twitter-icon.svg" alt="" width="22" height="22"></li>
+          <li><img src="images/linkedin-icon.svg" alt="" width="22" height="22"></li>
+          <li><img src="images/reddit-icon2.svg" alt="" width="22" height="22"></li>
         </ul>
     </div>
     <div class="main-container">
@@ -137,24 +136,24 @@
                  <h2><i class="far fa-clock"></i> Relevent Javascript History</h2>
 
                  <div class="scroll-list">
-                    <p><span class="score">Array.prototype.find() - JavaScript | MDN</span><span class= time-stamp> 2 hours ago</span></p>
-                    <p>(7) JavaScript Snake Game Tutorial Using Functional Programming - YouTube <span class= "time-stamp"> 20 hours ago</span></p>
-                     <p>JavaScript 30 — Build 30 things with vanilla JS in 30 days with 30 tutorials <span class= "time-stamp"> 2 days ago</span></p>
-                     <p>CSS and Javascript Personal Library - Evernote Web <span class= "time-stamp">a month ago</span></p>
-                    <p>Array.prototype.join() - JavaScript | MDN <span class= time-stamp></p>
-                    <p>Array.prototype.toLocaleString() - JavaScript | MDN <span class= "time-stamp">a month ago</span></p>
-                     <p>Online Interactive Javascript (JS) Cheatsheet <span class= "time-stamp">a month ago</span></p>
-                     <p>Useful Javascript Coding Links <span class= "time-stamp">a month ago</span></p>
-                    <p>Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
-                     <p>Relay Javascript framework
-                    <p>Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
-                     <p>Online Interactive Javascript (JS) Cheatsheet <span class= "time-stamp">a month ago</span></p>
-                     <p>Useful Javascript Coding Links <span class= "time-stamp">a month ago</span></p>
-                    <p>Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
-                    <p>Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
-                     <p>Online Interactive Javascript (JS) Cheatsheet <span class= "time-stamp">a month ago</span></p>
-                     <p>Useful Javascript Coding Links <span class= "time-stamp">a month ago</span></p>
-                    <p>Lily on Twitter: "Day 20... <span class= "time-stamp">a month ago</span></p>
+                    <p class="score">Array.prototype.find() - JavaScript | MDN<span class= time-stamp> 2 hours ago</span></p>
+                    <p class="score">(7) JavaScript Snake Game Tutorial Using Functional Programming - YouTube <span class= "time-stamp"> 20 hours ago</span></p>
+                    <p class="score"> JavaScript 30 — Build 30 things with vanilla JS in 30 days with 30 tutorials <span class= "time-stamp"> 2 days ago</span></p>
+                    <p class="score"> CSS and Javascript Personal Library - Evernote Web <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Array.prototype.join() - JavaScript | MDN <span class= time-stamp>a month ago</span></p>
+                    <p class="score"> Array.prototype.toLocaleString() - JavaScript | MDN <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Online Interactive Javascript (JS) Cheatsheet <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Useful Javascript Coding Links <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Relay Javascript framework<span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Online Interactive Javascript (JS) Cheatsheet <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Useful Javascript Coding Links <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Lily on Twitter: "Day 20...<span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Online Interactive Javascript (JS) Cheatsheet <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Useful Javascript Coding Links <span class= "time-stamp">a month ago</span></p>
+                    <p class="score"> Lily on Twitter: "Day 20... <span class= "time-stamp">a month ago</span></p>
 
 
                  </div>
@@ -243,7 +242,9 @@
 
 
     minutes.innerHTML = date.getMinutes();
-    hours.innerHTML = date.getHours();
+    hours.innerHTML = date.getHours().toString();
+
+    let twoDigits = ('0'+date.getMinutes()).slice(-2);
 
 
   }

@@ -66,12 +66,18 @@
 .fas, .fa-lock {
   opacity: 0.5; }
 
+.fa-lock {
+  margin-left: 5px; }
+
+.far {
+  margin-right: 5px; }
+
 .initab-icon {
   padding-left: 37px;
   padding-top: 500px; }
 
-.far {
-  margin-right: 10px; }
+.change-color {
+  fill: #0C76A8; }
 
 .card {
   padding: 5px; }
@@ -79,6 +85,8 @@
     padding-bottom: 20px;
     color: white;
     border-left: 3px solid white; }
+    .card .paragraph.paragraph:hover {
+      border-left: 3px solid #3CD80E; }
     .card .paragraph a {
       text-decoration: none;
       padding-left: 10px;
@@ -153,12 +161,13 @@
     padding-bottom: 20px;
     color: #A0CAF0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; }
+  .card-javascript_history .score {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between; }
-    .card-javascript_history .scroll-list p {
-      justify-content: space-between; }
-    .card-javascript_history .scroll-list .score .time-stamp {
-      color: gray; }
+  .card-javascript_history .time-stamp {
+    color: gray; }
   .card-javascript_history .card-time {
     display: flex;
     align-items: center;
