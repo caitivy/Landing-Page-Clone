@@ -82,9 +82,10 @@
 .card {
   padding: 5px; }
   .card .paragraph {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     color: white;
-    border-left: 3px solid white; }
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+    padding-left: 5px; }
     .card .paragraph.paragraph:hover {
       border-left: 3px solid #3CD80E; }
     .card .paragraph a {
@@ -159,10 +160,8 @@
     overflow-y: scroll;
     padding-top: 10px;
     padding-bottom: 20px;
-    color: #A0CAF0;
-    display: flex;
-    flex-direction: column; }
-  .card-javascript_history .score {
+    color: #A0CAF0; }
+  .card-javascript_history .history-feed {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }

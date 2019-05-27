@@ -5,9 +5,10 @@ $breakpoint-mobile: 415px;
   padding: 5px;
 
   .paragraph {
-    padding-bottom:20px;
+    margin-bottom:20px;
     color: white;
-    border-left:3px solid white;
+    border-left:3px solid rgba(265, 265, 265, 0.2);
+    padding-left: 5px;
 
     &.paragraph:hover {
       border-left:3px solid #3CD80E;
@@ -114,12 +115,11 @@ $breakpoint-mobile: 415px;
         padding-top: 10px;
         padding-bottom: 20px;
         color: #A0CAF0;
-        display: flex;
-        flex-direction: column;
+
 
       }
 
-        .score {
+        .history-feed {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
